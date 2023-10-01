@@ -18,8 +18,8 @@
 .home {
     display: flex;
     flex-direction: column;
-    height: 45rem;
-}
+    height: 40rem;
+}   
 
 .bg-shadow {
     background-color: black;
@@ -39,7 +39,7 @@ nav {
     width: 100%;
     justify-content: space-between;
     position: fixed;
-    height: 4rem;
+    height: 5rem;
     padding: 0 3rem;
     /* background-color: rgba(0, 0, 0, 0.377); */
     
@@ -94,10 +94,21 @@ nav div ul li:hover {
 }
 
 nav div input {
-    border: solid 2px rgb(255, 69, 69);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 2rem;
     background-color: rgba(0, 0, 0, 0);
     height: 2rem;
+    padding: 1rem;
+    color: white;
+}
+nav div input::placeholder {
+    color: white;
+}
+nav div input:active {
+    border: 2px solid white;
+}
+nav div input:focus {
+    border: 2px solid white;
 }
 
 nav div button {
@@ -119,10 +130,45 @@ nav div button:hover {
 }
 
 .deskripsi {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    gap: 1.5rem;
     margin-top: 7rem;
     margin-left: 4rem;
     color: white;
+    justify-content: center;
+    align-items: center;
 
+}
+
+.deskripsi p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(192, 191, 191);
+}
+
+.deskripsi button {
+    border-radius: 1.5rem;
+    border: none;
+    background-color: rgb(255, 95, 95);
+    width: 20rem;
+    height: 4rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 2rem;
+    cursor: pointer;
+   
+}
+.deskripsi button:hover {
+    -webkit-box-shadow: -8px 8px 29px 0px rgba(255, 95, 95, 0.84);
+    -moz-box-shadow: -8px 8px 29px 0px rgba(255, 95, 95, 0.84);
+    box-shadow: -8px 8px 29px 0px rgba(255, 95, 95, 0.84);
+}
+
+.deskripsi button p {
+    color: white;
 }
 
 
