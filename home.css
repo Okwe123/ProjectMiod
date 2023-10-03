@@ -291,10 +291,9 @@ nav div button:hover {
     border-radius: .5rem;
     /* border: 3px solid rgb(0, 0, 0); */
     cursor: pointer;
-    background-size: 35%;
+    background-size: 35% 100%;
     background-repeat: no-repeat;
     background-position: right;
-
     
 }
 .home2 div .poin ul:hover {
@@ -331,7 +330,8 @@ nav div button:hover {
 }
 
 .home2 div .poin ul li {
-    width: 23rem;
+    width: 75%;
+    z-index: 2;
     display: flex;
     flex-direction: column;
 }
@@ -388,47 +388,48 @@ nav div button:hover {
 
 .bagianTiga div ul .games1 {
     background-image: url('https://www.riotgames.com/darkroom/855/4930733403fae24cf79e5e27be520202:1ead09c2fa8c3429874bc05e5358ccca/lolkv-2023.png');
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .bagianTiga div ul .games2 {
     background-image: url('https://www.riotgames.com/darkroom/855/dc0cf2b2bb73032844e72bc9fc822b72:b219eb97924431e565cde97be0b563e0/val7-act-1.png');
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .bagianTiga div ul .games3 {
     background-image: url('https://www.riotgames.com/darkroom/855/effbf1ba54507ff58d9b0c802ee7be1f:5689dc04def4525c8cb2bdee25905498/riotgames-com-tft-set9.png');
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .bagianTiga div ul .games4 {
     background-image: url('https://www.riotgames.com/darkroom/855/bdc9d7a312cc33ad8e590136688b6ffb:ee9ec26a642d5c9c8edfb6d40354629a/wrka-2023.png');
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .bagianTiga div ul .games5 {
     background-image: url('https://www.riotgames.com/darkroom/855/d46ae789d24f701992bb07c1f8c40a2e:91151fbbfc23ed378d65fccef6fece0a/riotgames-com-legendsofruneterra-2023.png');
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .bagianTiga div ul .esport1 {
     background-image: url('https://www.riotgames.com/darkroom/855/dc437f148be6cafcde54c4f52f7ab939:36b3bea3c22755b0436c1de2fc51330d/lol-esports-kv-2023.png');
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .bagianTiga div ul .esport2 {
     background-image: url('https://www.riotgames.com/darkroom/855/24ae38d6bcfda35c84ded6c6cd77a44e:19f7b1c2f0237496de84d9eb0fc24bfa/val.png');
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .bagianTiga div ul .entertainment1 {
     background-image: url('https://www.riotgames.com/darkroom/855/8e43c45318fd4d29006d12f8523ea289:48efcf51118eac260aa9ac16c73ae91c/arcane-card.png');
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .bagianTiga div ul .entertainment2 {
     background-image: url('https://www.riotgames.com/darkroom/855/c38a2e0e070ba045a40bd4b77bfeeaf1:bba41997f467361e190a4dd616679837/riot-music-card.png');
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .bagianTiga div ul li p {
@@ -444,3 +445,73 @@ nav div button:hover {
     object-fit: cover;
     transform: rotate(20deg);
 } */
+
+
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(34, 34, 34);
+    color: rgb(179, 179, 179);
+    font-weight: 600;
+    letter-spacing: .05rem;
+    font-size: .8rem;
+}
+
+footer div {
+    padding: 2rem;
+  
+}
+
+
+
+footer div ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2.2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid rgb(194, 194, 194) ;
+}
+
+footer div ul img {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+footer div ul li {
+    cursor: pointer;
+}
+footer div ul li:hover {
+    color: white;
+    text-decoration: underline;
+    
+
+}
+
+footer .cookie {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: center;
+}
+
+footer div p {
+    font-weight: 300;
+    font-size: .8rem;
+    cursor: pointer;
+}
+footer div p:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+footer div span {
+    font-weight: 300;
+    font-size: .7rem;
+    border-left: 1px solid grey;
+    padding: .5rem;
+}
