@@ -40,6 +40,7 @@ nav {
     justify-content: space-between;
     position: fixed;
     height: 5rem;
+    z-index: 100;
     padding: 0 3rem;
     /* background-color: rgba(0, 0, 0, 0.377); */
     
@@ -236,25 +237,26 @@ nav div button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: .1rem;
     background-color: black;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: .8rem .8rem 0 .8rem;
     height: 25rem;
-    border: 3px solid rgba(214, 214, 214, 0);
+    /* border: 3px solid rgba(214, 214, 214, 0); */
     overflow: hidden;
 
 }
 .home2 div .utama:hover {
-    border: 3px solid rgba(214, 214, 214, 0.434);
+    /* border: 3px solid rgba(214, 214, 214, 0.434); */
+    outline: 3px outset rgba(255, 255, 255, 0.518);
+    outline-offset: 3px;
 
 }
 
-.utama img {
+/* .utama img {
     width: 100%;
     height: 80%;
     object-fit: cover;
-}
+} */
 
 .utama p {
     background-image: url('image/FORNITE.jpeg.jpg');
@@ -287,9 +289,8 @@ nav div button:hover {
     padding-left: 1.5rem;
     height: 7rem;
     border-radius: .5rem;
-    border: 3px solid rgb(0, 0, 0);
+    /* border: 3px solid rgb(0, 0, 0); */
     cursor: pointer;
-
     background-size: 35%;
     background-repeat: no-repeat;
     background-position: right;
@@ -298,9 +299,11 @@ nav div button:hover {
 }
 .home2 div .poin ul:hover {
     /* border: 4px solid transparent; */
+    /* border: 3px solid transparent;
     border-image:linear-gradient(30deg, rgb(203, 203, 203),rgb(92, 92, 92), rgb(100, 100, 100));
-    border-image-slice: 1;
-
+    border-image-slice: 1; */
+    outline: 3px outset rgba(255, 255, 255, 0.539);
+    outline-offset: 3px;
 }
 
 
@@ -336,3 +339,108 @@ nav div button:hover {
 .home2 div .poin ul li .desc {
     color: rgb(96, 96, 96);
 }
+
+
+
+/* Bagian tiga */
+.bagianTiga {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    padding: 8rem 5rem;
+    gap: 5rem;
+}
+
+.bagianTiga div h1 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.bagianTiga div ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.bagianTiga div ul li {
+    
+    width: 48.7%;
+    height: 20rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    padding: 2rem;
+    font-family: 'Ysabeau SC';
+    align-items: center;
+    background-color: grey;
+
+}
+.bagianTiga div ul li:hover {
+    outline: 3px outset rgb(188, 188, 188);
+    outline-offset: 3px;
+}
+
+.bagianTiga div ul .games1 {
+    background-image: url('https://www.riotgames.com/darkroom/855/4930733403fae24cf79e5e27be520202:1ead09c2fa8c3429874bc05e5358ccca/lolkv-2023.png');
+    background-size: cover;
+}
+
+.bagianTiga div ul .games2 {
+    background-image: url('https://www.riotgames.com/darkroom/855/dc0cf2b2bb73032844e72bc9fc822b72:b219eb97924431e565cde97be0b563e0/val7-act-1.png');
+    background-size: cover;
+}
+
+.bagianTiga div ul .games3 {
+    background-image: url('https://www.riotgames.com/darkroom/855/effbf1ba54507ff58d9b0c802ee7be1f:5689dc04def4525c8cb2bdee25905498/riotgames-com-tft-set9.png');
+    background-size: cover;
+}
+
+.bagianTiga div ul .games4 {
+    background-image: url('https://www.riotgames.com/darkroom/855/bdc9d7a312cc33ad8e590136688b6ffb:ee9ec26a642d5c9c8edfb6d40354629a/wrka-2023.png');
+    background-size: cover;
+}
+
+.bagianTiga div ul .games5 {
+    background-image: url('https://www.riotgames.com/darkroom/855/d46ae789d24f701992bb07c1f8c40a2e:91151fbbfc23ed378d65fccef6fece0a/riotgames-com-legendsofruneterra-2023.png');
+    background-size: cover;
+}
+
+.bagianTiga div ul .esport1 {
+    background-image: url('https://www.riotgames.com/darkroom/855/dc437f148be6cafcde54c4f52f7ab939:36b3bea3c22755b0436c1de2fc51330d/lol-esports-kv-2023.png');
+    background-size: cover;
+}
+
+.bagianTiga div ul .esport2 {
+    background-image: url('https://www.riotgames.com/darkroom/855/24ae38d6bcfda35c84ded6c6cd77a44e:19f7b1c2f0237496de84d9eb0fc24bfa/val.png');
+    background-size: cover;
+}
+
+.bagianTiga div ul .entertainment1 {
+    background-image: url('https://www.riotgames.com/darkroom/855/8e43c45318fd4d29006d12f8523ea289:48efcf51118eac260aa9ac16c73ae91c/arcane-card.png');
+    background-size: cover;
+}
+
+.bagianTiga div ul .entertainment2 {
+    background-image: url('https://www.riotgames.com/darkroom/855/c38a2e0e070ba045a40bd4b77bfeeaf1:bba41997f467361e190a4dd616679837/riot-music-card.png');
+    background-size: cover;
+}
+
+.bagianTiga div ul li p {
+    font-size: 1.7rem;
+    text-align: center;
+    width: 30%;
+    font-weight: 800;
+}
+
+/* .bagianTiga div ul li img {
+    width: 70%;
+    height: 30rem;
+    object-fit: cover;
+    transform: rotate(20deg);
+} */
