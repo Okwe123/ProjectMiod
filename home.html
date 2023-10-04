@@ -28,7 +28,7 @@
             </div>
             
             <div>
-                <input type="text" placeholder="SEARCH"/>
+                <input type="text" placeholder="SEARCH" id="search"/>
                 <a href="signUp.html">
                     <button>SIGN IN</button>
                 </a>
@@ -110,13 +110,13 @@
                     <p>VALORANT</p>
                 </li>
                 <li class="games3">
-                    <p>VALORANT</p>
+                    <p>TEAMFIGHT TACTICS</p>
                 </li>
                 <li class="games4">
-                    <p>VALORANT</p>
+                    <p>WILDRIF</p>
                 </li>
                 <li class="games5">
-                    <p>VALORANT</p>
+                    <p>LEGEND OF RUNETERRA</p>
                 </li>
             </ul>
         </div>
@@ -125,10 +125,10 @@
             <h1>Esports</h1>
             <ul>
                 <li class="esport1">
-                    <p>VALORANT</p>
+                    <p>LOL ESPORT</p>
                 </li>
                 <li class="esport2">
-                    <p>VALORANT</p>
+                    <p>VALORANT CHAMPIONS TOUR</p>
                 </li>
             </ul>
         </div>
@@ -137,10 +137,10 @@
             <h1>Entertainment</h1>
             <ul>
                 <li class="entertainment1">
-                    <p>VALORANT</p>
+                    <p>ARCANE</p>
                 </li>
                 <li class="entertainment2">
-                    <p>VALORANT</p>
+                    <p>RIOT GAMES MUSIC</p>
                 </li>
             </ul>
         </div>
@@ -186,6 +186,32 @@
         </div>
     </footer>
     
+
+
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("navbar").style.backgroundColor = "black";
+            document.getElementById("search").style.backgroundColor = "rgb(44, 44, 44)";
+            document.getElementById("search").style.borderColor = "rgb(44, 44, 44)";
+            document.getElementById("search").style.color = "white";
+            document.getElementById("navbar").style.transitionProperty = "all";
+            document.getElementById("navbar").style.transitionDuration = ".2s";
+            document.getElementById("navbar").style.transitionTimingFunction = "ease-in";
+
+        } else {
+            document.getElementById("navbar").style.backgroundColor = "transparent";
+            document.getElementById("search").style.backgroundColor = "transparent";
+            document.getElementById("search").style.borderColor = "rgb(255, 255, 255)";
+
+
+        }
+        }
+    </script>
+
 
 </body>
 </html>

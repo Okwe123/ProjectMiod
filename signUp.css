@@ -14,6 +14,7 @@
 body {
     background-image: url('image/WACTH\ DOG.jpg');
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .signUp {
@@ -77,6 +78,26 @@ form div input[type=password]:focus {
     background-color: grey;
 } */
 
+form .sosmed .fa {
+    font-size: 1rem;
+    color: white;
+    border-radius: .7rem;
+}
+
+.fa-facebook {
+    background-color: #3B5998;
+}
+.fa-google {
+    background-color: #dd4b39;
+}
+.fa-apple {
+    background-color: black;
+} 
+.fa-steam {
+    background-color: blue;
+    background: linear-gradient(140deg, black, rgb(0, 0, 197));
+}
+
 form div ul {
     display: flex;
     flex-direction: row;
@@ -88,6 +109,8 @@ form div ul {
 form div ul li {
     cursor: pointer;
     text-align: center;
+    width: 100%;
+    padding: .7rem;
 }
 
 form button {
