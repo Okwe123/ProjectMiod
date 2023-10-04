@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "poppins";
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('image/WACTH\ DOG.jpg');
+    background-size: cover;
+}
+
+.signUp {
+    padding: 4rem;
+}
+
+.signUp img{
+    width: 8rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: white;
+    padding: 1.5rem 3rem;
+    gap: 1rem;
+}
+
+form h1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    /* justify-content: center; */
+}
+
+form div input[type=text] {
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: .2rem;
+    font-size: .7rem;
+    font-weight: 700;
+    background-color: rgb(244, 244, 244);
+}
+form div input[type=password] {
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: .2rem;
+    font-size: .7rem;
+    font-weight: 700;
+    background-color: rgb(244, 244, 244);
+}
+form div input[type=text]:focus {
+    background-color: white;
+}
+form div input[type=password]:focus {
+    background-color: white;
+}
+
+/* form div input[type=checkbox] {
+    border: none;
+    background-color: grey;
+} */
+
+form div ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+form div ul li {
+    cursor: pointer;
+    text-align: center;
+}
+
+form button {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto 1rem auto;
+    border: 2px solid rgb(186, 186, 186);
+    border-radius: 40%;
+    background-color: white;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: red;
+    border: 2px solid red;
+}
+
+form button a {
+    display: flex;
+    padding: 1.5rem;
+    width: 100%;
+    height: 100%;
+    color: rgb(186, 186, 186);
+
+}
+form button:hover a{
+    color: white;
+}
+
+
+form section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    font-size: .7rem;
+    font-weight: 700;
+    color: rgb(93, 93, 93);
+}
+
+form section a {
+    text-align: center;
+    cursor: pointer;
+}
+form section a:hover {
+    color: black;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    color: rgb(188, 188, 188);
+    font-size: .7rem;
+    font-weight: 700;
+    gap: 1rem;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+footer ul li {
+    cursor: pointer;
+}
+footer ul li:hover {
+    color: white;
+}
+
+footer ul span {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}

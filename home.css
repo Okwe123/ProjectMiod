@@ -11,11 +11,15 @@
     position: absolute;
     width: 100%;
     object-fit: cover;
-    height: 95%;
+    height: 100%;
     z-index: -3;
 }
 
 .home {
+    /* background-image: url("./image/bg-miod.jpeg");
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    background-repeat: no-repeat; */
     display: flex;
     flex-direction: column;
     height: 40rem;
@@ -28,7 +32,7 @@
     top: 0;
     z-index: -2;
     width: 100%;
-    height: 95%;
+    height: 100%;
     opacity: .4;
 }
 
@@ -65,7 +69,7 @@ nav div img {
 nav div ul {
     display: flex;
     flex-direction: row;
-    gap: .2rem;
+    gap: 1rem;
     height: 100%;
     width: 100%;
     text-align: center;
@@ -156,8 +160,8 @@ nav div button:hover {
     flex-direction: row;
     border-radius: 1.5rem;
     border: none;
-    background-color: rgb(255, 95, 95);
-    background: linear-gradient(to right, rgb(255, 95, 95), rgb(255, 116, 116) );
+    background-color: rgb(255, 79, 79);
+    background: linear-gradient(to right, rgb(255, 79, 79), rgb(255, 129, 112) );
     width: 20rem;
     height: 4.5rem;
     color: white;
@@ -231,6 +235,11 @@ nav div button:hover {
 }
 .home2 div button:hover {
     background-color: rgb(57, 57, 57);
+}
+
+.home2 .frame {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
 }
 
 .home2 div .utama {
@@ -358,9 +367,8 @@ nav div button:hover {
 }
 
 .bagianTiga div ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     justify-content: center;
     align-items: center;
@@ -368,8 +376,8 @@ nav div button:hover {
 
 .bagianTiga div ul li {
     
-    width: 48.7%;
-    height: 20rem;
+    width: 100%;
+    height: 18rem;
     cursor: pointer;
     border-radius: 1rem;
     overflow: hidden;
@@ -457,32 +465,43 @@ footer {
     font-weight: 600;
     letter-spacing: .05rem;
     font-size: .8rem;
+    justify-content: center;
 }
 
 footer div {
     padding: 2rem;
+    align-items: center;
   
 }
 
+footer .akses {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
 
 
 footer div ul {
     display: flex;
     flex-direction: row;
-    gap: 2.2rem;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
     align-items: center;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid rgb(194, 194, 194) ;
 }
 
-footer div ul img {
-    width: 3rem;
-    height: 3rem;
+footer div .sosmed {
+    flex-wrap: nowrap;
+}
+
+footer div img {
+    width: 5rem;
+    object-fit: cover;
     cursor: pointer;
 }
 
 footer div ul li {
+    display: flex;
     cursor: pointer;
 }
 footer div ul li:hover {
